@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgxUiLoaderModule } from "ngx-ui-loader";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BodyComponent } from './components/body/body.component';
@@ -28,7 +28,8 @@ import { PartnersComponent } from './components/partners/partners.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxUiLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
