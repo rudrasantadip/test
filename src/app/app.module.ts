@@ -3,10 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BodyComponent } from './components/body/body.component';
+import { NavComponent } from './components/nav/nav.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { EventsComponent } from './components/events/events.component';
+import { TeamComponent } from './components/team/team.component';
+import { PartnersComponent } from './components/partners/partners.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BodyComponent,
+    NavComponent,
+    HomeComponent,
+    AboutComponent,
+    EventsComponent,
+    TeamComponent,
+    PartnersComponent,
+  
+  
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Community Partners</h1>
+    <div class="community-partners">
+        <div class="images" *ngFor="let image of communityPartners">
+            <img [src]="image.logoUrl" alt="">
+        </div>
+    </div>
+
+
+
+    <h1>Technical Partner</h1>
+    <div class="community-partners technical text-center">
+        <div class="images gfg" *ngFor="let image of technicalPartners">
+                <img [src]="image.logoUrl" alt="">
+        </div>
+    </div>
+</div>

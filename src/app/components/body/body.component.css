@@ -1,0 +1,58 @@
+.body
+{
+ width: calc(100%-5rem);
+ height: 100vh;
+ margin-left: 1rem;
+ z-index: 0;
+ top: 0;
+ transition: all 0.5s ease;
+ background: transparent;
+ padding: 3rem;   
+ text-align: center;
+
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+
+}
+
+.body-trimmed{
+    width: calc(100%);
+
+}
+
+.body-md-screen{
+    width: calc(100%);
+    margin-left: 5rem;
+}
+
+
+/* HEADER CSS */
+.header{
+    width: 80vw;
+    position: absolute;
+    top: 2%;   
+}
+
+.logos{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    object-fit: contain;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+
+.logo > img{
+    width: 50px;
+}

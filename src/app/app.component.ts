@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SideNavtoggle } from './components/nav/nav.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'adcomsys-home';
+  isNavCollapsed = false;
+  screenWidth = 0;
+  onToggleSideNav(data:SideNavtoggle)
+  {
+    this.screenWidth=data.screenWidth;
+    this.isNavCollapsed= data.collapsed;
+  }
 }

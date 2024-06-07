@@ -1,0 +1,79 @@
+<div class="container">
+    <h1>Meet Our Team</h1>
+    
+    <div class="images">
+        <h2>Core Team</h2>
+        <div class="frame">
+            <div class="item" *ngFor="let core of coreMembers">
+                <div class="image">
+                    <!-- <img src="/assets/images/members/diptadip_biswas.jpg" alt=""> -->
+                     <img [src]="core.image" alt="">
+                </div>
+                <div class="info">
+                    <div class="designation">
+                        <p>{{core.name}}</p>
+                        <p>{{core.desig}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="images">
+        <h2>Coordinators</h2>
+        <div class="frame">
+            <div class="item" *ngFor="let coord of coordinators">
+                <div class="image">
+                    <!-- <img src="/assets/images/members/diptadip_biswas.jpg" alt=""> -->
+                     <img [src]="coord.image" alt="">
+                </div>
+                <div class="info">
+                    <div class="designation">
+                        <p>{{coord.name}}</p>
+                        <p>{{coord.desig}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="images">
+        <h2>Task Force</h2>
+        <div class="frame">
+            <div class="item" *ngFor="let tf of taskForce">
+                <div class="image">
+                    <!-- <img src="/assets/images/members/diptadip_biswas.jpg" alt=""> -->
+                     <img [src]="tf.image" alt="">
+                </div>
+                <div class="info">
+                    <div class="designation">
+                        <p>{{tf.name}}</p>
+                        <p>{{tf.desig}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="images">
+        <h2>Volunteer</h2>
+        <div class="frame">
+            <div class="item" *ngFor="let voln of volunteers">
+                <div class="image">
+                    <!-- <img src="/assets/images/members/diptadip_biswas.jpg" alt=""> -->
+                     <img [src]="voln.image" alt="">
+                </div>
+                <div class="info">
+                    <div class="designation">
+                        <p>{{voln.name}}</p>
+                        <p>{{voln.desig}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

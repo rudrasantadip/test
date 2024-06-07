@@ -1,0 +1,80 @@
+.container{
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: justify;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+
+
+
+.material-symbols-outlined{
+    color: slateblue;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 42px slateblue, 0 0 82px white,0 0 92px slateblue;
+}
+
+span{
+    color: white;
+    text-align: justify;
+}
+
+.info > h1{
+    color: slateblue;
+}
+
+.link{
+    color: black;
+    background: transparent;
+    border: 2px solid white;
+    font-size: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    margin-top: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.card-body{
+    text-align: justify;
+}
+
+.card-img-top{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

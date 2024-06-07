@@ -1,0 +1,102 @@
+.container{
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    text-align: justify;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+
+h1{
+    color: slateblue;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 42px slateblue, 0 0 82px white,0 0 92px slateblue;
+}
+
+h2{
+    color: white;
+}
+
+.date{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+span{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight: 600;
+}
+
+.conf-text{
+  text-align: justify;
+}
+
+
+/* count down css */
+
+.countdown-timer {
+
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .countdown-timer h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: slateblue;
+  }
+  
+  .countdown-timer div {
+    font-size: 1.5em;
+  }
+
+  .timer-inner{
+    margin-top: 10px;
+    color: slateblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .explore button{
+    text-align: center;
+    padding: 9px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 200px;
+    font-size: 24px;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    border: 1px solid slateblue;
+    border-radius: 8px;
+
+    transition: all 0.5s ease;
+  }
+
+  .explore button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: slateblue;
+  }
+
+
+@keyframes glow {
+    from{
+        text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 42px slateblue, 0 0 82px white,0 0 92px slateblue;
+    }
+    to {
+      text-shadow: 0 0 60px slateblue, 0 0 70px white;
+    }
+  
+  }

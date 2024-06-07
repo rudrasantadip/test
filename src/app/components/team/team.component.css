@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    text-align: justify;
+    justify-content: space-between;
+    transform: translateX(-50%);
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+h1{
+    color: slateblue;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 42px slateblue, 0 0 82px white,0 0 92px slateblue;
+}
+
+h2{
+    margin-top: 12px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 42px slateblue, 0 0 82px white,0 0 92px slateblue;
+}
+
+
+.frame{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 20px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+    margin-top: 40px;
+}
+
+.image{
+    width: 150px;
+    margin-top: 20px;
+}
+  
+.image > img{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    transform: translateY(35%);
+    transition: all 0.5s ease;
+}
+
+.image > img:hover
+{
+    transform: translateY(0);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.designation > p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+
+@media screen  and (max-width:768px){
+    .frame{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}

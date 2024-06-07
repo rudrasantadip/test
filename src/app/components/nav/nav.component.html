@@ -1,0 +1,22 @@
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed':''" >
+  <div class="logo-container">
+    <button class="logo" (click)="toggleCollapse()"><span style="color: black;" class="material-symbols-outlined">menu</span></button>
+    <div style="text-align: center;" class="logo-text" *ngIf="!collapsed">AdComSys 2024</div>
+    <button class="btn-close" (click)="closeSideNav()" *ngIf="!collapsed">
+        <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+
+  <ul class="sidenav-nav">
+    <li class="sidenav-nav-item" *ngFor="let navItem of navData">
+      <a href="" class="sidenav-link" 
+      [routerLink]="navItem.routerLink"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}"
+      >
+        <span routerLinkActive="icon-active" class="material-symbols-outlined  sidenav-link-icon" *ngIf="!collapsed">{{navItem.icon}}</span>
+        <span routerLinkActive="text-active" class="sidenav-link-text" *ngIf="!collapsed" >{{navItem.label}}</span>
+      </a> 
+    </li>
+  </ul>
+</div>
